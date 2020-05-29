@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DataBindingAngular9';
+  datos: any = { Nombre: "", Apellido: "", Edad: "", Documento: "" };
+
+  constructor() {
+    this.datos = { Nombre: "", Apellido: "", Edad: "", Documento: "" };
+   }
+   registrarProceso(datos) {
+    console.log(JSON.stringify(datos));
+  }
 }
